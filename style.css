@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+:root {
+    font-size: 12px;
+    font-family: 'Noto Sans Japanese', sans-serif;
+    --card-size: 0.25;
+}
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+h2 {
+    display: none;
+}
+h3 {
+    font-size: 1rem;
+}
+a {
+    color: black;
+}
+
+.flex {
+    display: flex;
+}
+.my-1 {
+    margin: 1rem 0;
+}
+.font-bold {
+    font-weight: bold;
+}
+.text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: calc(55rem * var(--card-size));
+    height: calc(91rem * var(--card-size));
+    margin: 0 0.5rem;
+    padding: 0 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.2);
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 8rem auto;
+}
+.icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+    :root {
+        font-size: 16px;
+    }
+}
+@media (min-width: 1280px) {
+    :root {
+        font-size: 24px;
+    }
+}
