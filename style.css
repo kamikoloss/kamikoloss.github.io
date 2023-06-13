@@ -4,19 +4,19 @@
 :root {
     font-size: 12px;
     font-family: 'Noto Sans Japanese', sans-serif;
-    --card-size: 0.25;
 }
 html * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 1.5rem;
+    line-height: 1.75rem;
 }
 h2 {
     display: none;
 }
 h3 {
     font-size: 1rem;
+    font-weight: bold;
 }
 a {
     color: black;
@@ -31,6 +31,10 @@ a {
 .font-bold {
     font-weight: bold;
 }
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
 .text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -39,31 +43,33 @@ a {
 .card {
     display: flex;
     align-items: center;
-    width: calc(55rem * var(--card-size));
-    height: calc(91rem * var(--card-size));
-    margin: 0 0.5rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 55 / 91;
     padding: 0 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.2);
 }
+.card:nth-child(odd) {
+    margin-right: 1rem;
+}
 .cards {
     display: flex;
     justify-content: center;
-    margin: 8rem auto;
+    margin: 8rem 1rem;
 }
 .icon {
     width: 4rem;
     height: 4rem;
+}
+.logo {
+    width: 100%;
 }
 
 /* Responsive */
 @media (min-width: 640px) {
     :root {
         font-size: 16px;
-    }
-}
-@media (min-width: 1280px) {
-    :root {
-        font-size: 24px;
     }
 }
