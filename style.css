@@ -26,6 +26,9 @@ a {
 .my-1 {
     margin: 1rem 0;
 }
+.my-2 {
+    margin: 2rem 0;
+}
 .text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -63,6 +66,11 @@ a {
 }
 .logo {
     width: 100%;
+}
+.social {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
 }
 
 /* Responsive */
