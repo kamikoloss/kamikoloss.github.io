@@ -2,16 +2,16 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
 :root {
-    font-size: 12px;
-    font-family: 'Noto Sans Japanese', sans-serif;
+  font-size: 12px;
+  font-family: 'Noto Sans Japanese', sans-serif;
 }
 html * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 a {
-    color: black;
+  color: black;
 }
 
 .flex { display: flex; }
@@ -26,34 +26,34 @@ a {
 .w-full { width: 100%; }
 
 .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 320px;
-    aspect-ratio: 55 / 91;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 55 / 91;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.2);
 }
 .cards {
-    display: flex;
-    justify-content: center;
-    margin: 8rem 2rem;
+  display: flex;
+  justify-content: center;
+  margin: 8rem 2rem;
 }
 .icon {
-    width: 4rem;
-    height: 4rem;
+  width: 4rem;
+  height: 4rem;
 }
 .social {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 /* Responsive */
 @media (min-width: 640px) {
-    :root {
-        font-size: 16px;
-    }
-    .sm-pr-1 { padding-right: 1rem; }
+  :root {
+    font-size: 16px;
+  }
+  .sm-pr-1 { padding-right: 1rem; }
 }
